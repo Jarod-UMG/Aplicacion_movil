@@ -1,0 +1,27 @@
+@api = http://localhost:3000/productos
+
+GET {{api}}
+###
+GET {{api}}/1
+###
+GET {{api}}/count
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "nombre_medicamento": "xd",
+    "precio_u": 10,
+    "cantidad_stock": 50,
+    "cantidad_vendida": 0
+}
+###
+DELETE {{api}}/5
+###
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "precio_u": 30,
+    "cantidad_stock": 125
+}
